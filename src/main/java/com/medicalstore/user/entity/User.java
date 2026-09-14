@@ -36,10 +36,7 @@ public class User {
     private boolean active = true;
 
     @Column(nullable = false)
-    private boolean emailVerified = false;
-
-    @Column(nullable = false)
-    private boolean phoneVerified = false;
+    private boolean accountVerified = false;
 
     @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
