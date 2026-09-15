@@ -41,7 +41,9 @@ public class SecurityConfig {
                         .requestMatchers(
                                 "/api/users/register",
                                 "/api/users/verify-otp",
-                                "/api/auth/login"
+                                "/api/auth/login",
+                                "/api/auth/send-login-otp",
+                                "/api/auth/login-otp"
                         ).permitAll()
 
                         // ADMIN only
